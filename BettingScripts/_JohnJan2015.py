@@ -27,7 +27,7 @@ day5 = day5.lower()
 
 if __name__ == "__main__":
     rightnow = datetime.datetime.now().strftime("%d-%m-%y")
-    logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'w')
+    logfile = open("John_2015.html" , 'w')
     logfile.write("Odds taken from Sky Bet (in 90 mins) for Games on %s %s<br>" % (today.capitalize(),rightnow))
     logfile.write("Using odds 2/9, 2/11, 1/5, 1/6, 1/7, 1/8, 1/9, 1/10, 1/11, 1/12, 1/13, 1/14 for the home team to score +1 goals more than the away team.<br>")
     logfile.write("[H]ome - [A]way<br>")
@@ -59,7 +59,7 @@ if __name__ == "__main__":
         print day,future
         print ""
 
-        logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'a')
+        logfile = open("John_2015.html" , 'a')
         logfile.write('<br>')
         logfile.write('<br>')
         logfile.write("<b><u>" + day.capitalize() + " " + future + "</u></b>")
@@ -191,7 +191,7 @@ if __name__ == "__main__":
                                                 gameoutput = '<a href="%s#%s" target="sky">%s %s   (%s - %s %s)</a>' % (gamelink,dclink,hdwstring,gamewrite,fix,fixdet[0],fixdet[2])
                                                 #print gameoutput
 
-                                                logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'a')
+                                                logfile = open("John_2015.html" , 'a')
                                                 logfile.write(gameoutput)
                                                 logfile.write('<p>')
                                                 logfile.close()
@@ -314,7 +314,7 @@ if __name__ == "__main__":
                                                             gameoutput = '<a href="%s#%s" target="sky">%s %s   (%s - %s %s)</a>' % (gamelink,dclink,hdwstring,gamewrite,fix,fixdet[0],fixdet[2])
                                                             #print gameoutput
 
-                                                            logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'a')
+                                                            logfile = open("John_2015.html" , 'a')
                                                             logfile.write(gameoutput)
                                                             logfile.write('<p>')
                                                             logfile.close()
@@ -327,7 +327,7 @@ if __name__ == "__main__":
             
             print "Games for",day,gamesValid
 
-            logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'a')
+            logfile = open("John_2015.html" , 'a')
             logfile.write('<br>')
             logfile.write('<br>')
             logfile.write("<b>Games for " + day.capitalize() + ": " + str(gamesValid) + "</b>")
@@ -346,7 +346,7 @@ if __name__ == "__main__":
     print "Games Scanned:",gamesTotal
     print "Games to back:",totalValid
 
-    logfile = open("/Users/martinbrown/Desktop/BettingScripts/output/John_2015.html" , 'a')
+    logfile = open("John_2015.html" , 'a')
     logfile.write('<br>')
     logfile.write("<b>" + str(totalValid) + " games to back from " + str(gamesTotal) + " games scanned </b>")
     logfile.write('<br>')
