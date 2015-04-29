@@ -17,7 +17,6 @@ for items in elem:
     print linkstr
     print h
 
-    
 assert "No results found." not in driver.page_source
 driver.close()
 
